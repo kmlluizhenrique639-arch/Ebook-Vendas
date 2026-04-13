@@ -1,0 +1,218 @@
+.testimonials {
+  background: linear-gradient(160deg, #020d1f 0%, #03183a 50%, #041e4a 100%);
+  padding: 80px 5%;
+  position: relative;
+  overflow: hidden;
+}
+
+.testimonials::before {
+  content: '';
+  position: absolute;
+  top: -200px;
+  left: -200px;
+  width: 600px;
+  height: 600px;
+  background: radial-gradient(circle, rgba(37, 99, 235, 0.1), transparent 70%);
+  pointer-events: none;
+}
+
+.testimonials::after {
+  content: '';
+  position: absolute;
+  bottom: -150px;
+  right: -150px;
+  width: 500px;
+  height: 500px;
+  background: radial-gradient(circle, rgba(14, 165, 233, 0.08), transparent 70%);
+  pointer-events: none;
+}
+
+.testimonials .section-inner {
+  position: relative;
+  z-index: 1;
+}
+
+/* Badge */
+.t-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  background: rgba(37, 99, 235, 0.15);
+  border: 1px solid rgba(59, 130, 246, 0.35);
+  color: #93c5fd;
+  font-size: 11px;
+  font-weight: 500;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  padding: 5px 14px;
+  border-radius: 100px;
+  margin-bottom: 16px;
+}
+
+/* Title */
+.t-title {
+  font-family: var(--font-display);
+  font-size: clamp(26px, 4vw, 42px);
+  font-weight: 800;
+  color: #f0f8ff;
+  line-height: 1.1;
+  margin-bottom: 10px;
+}
+
+.t-title span {
+  background: linear-gradient(90deg, #3b82f6, #38bdf8, #7dd3fc);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.t-sub {
+  color: #475569;
+  font-size: 15px;
+  font-weight: 300;
+  margin: 10px auto 52px;
+  max-width: 460px;
+}
+
+/* Cards grid */
+.t-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 18px;
+}
+
+.t-card {
+  background: rgba(255, 255, 255, 0.04);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 18px;
+  padding: 26px 22px 22px;
+  transition: transform 0.3s, border-color 0.3s, background 0.3s;
+}
+
+.t-card:hover {
+  transform: translateY(-4px);
+  border-color: rgba(59, 130, 246, 0.35);
+  background: rgba(37, 99, 235, 0.07);
+}
+
+.t-card.featured {
+  border-color: rgba(59, 130, 246, 0.35);
+  background: rgba(37, 99, 235, 0.09);
+}
+
+.t-quote {
+  font-size: 38px;
+  line-height: 1;
+  color: rgba(59, 130, 246, 0.3);
+  font-family: Georgia, serif;
+  margin-bottom: 4px;
+  display: block;
+}
+
+.t-stars {
+  display: flex;
+  gap: 2px;
+  margin-bottom: 12px;
+  color: #fbbf24;
+  font-size: 13px;
+}
+
+.t-pill {
+  display: inline-block;
+  background: var(--green-bg);
+  border: 1px solid var(--green-border);
+  color: var(--green-text);
+  font-size: 10px;
+  font-weight: 500;
+  padding: 3px 10px;
+  border-radius: 100px;
+  margin-bottom: 12px;
+  letter-spacing: 0.04em;
+}
+
+.t-text {
+  color: #cbd5e1;
+  font-size: 13px;
+  line-height: 1.75;
+  font-weight: 300;
+  margin-bottom: 20px;
+}
+
+.t-text strong {
+  color: #e2e8f0;
+  font-weight: 500;
+}
+
+.t-hr {
+  height: 1px;
+  background: rgba(255, 255, 255, 0.07);
+  margin-bottom: 14px;
+}
+
+.t-author {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.t-av {
+  width: 38px;
+  height: 38px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: var(--font-display);
+  font-size: 13px;
+  font-weight: 700;
+  flex-shrink: 0;
+}
+
+.av1 { background: linear-gradient(135deg, #1d4ed8, #3b82f6); color: #bfdbfe; }
+.av2 { background: linear-gradient(135deg, #0e7490, #06b6d4); color: #a5f3fc; }
+.av3 { background: linear-gradient(135deg, #5b21b6, #8b5cf6); color: #ddd6fe; }
+.av4 { background: linear-gradient(135deg, #0f766e, #14b8a6); color: #99f6e4; }
+.av5 { background: linear-gradient(135deg, #9d174d, #ec4899); color: #fbcfe8; }
+.av6 { background: linear-gradient(135deg, #92400e, #f59e0b); color: #fde68a; }
+
+.t-name {
+  font-size: 13px;
+  font-weight: 500;
+  color: #f1f5f9;
+}
+
+.t-role {
+  font-size: 11px;
+  color: #475569;
+  font-weight: 300;
+}
+
+/* Bottom stats row */
+.t-stats-row {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 16px;
+  margin: 44px auto 0;
+  padding-top: 44px;
+  border-top: 1px solid rgba(255, 255, 255, 0.06);
+  text-align: center;
+}
+
+.t-stat-num {
+  font-family: var(--font-display);
+  font-size: clamp(22px, 3vw, 36px);
+  font-weight: 800;
+  background: linear-gradient(90deg, #3b82f6, #38bdf8);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  display: block;
+}
+
+.t-stat-label {
+  font-size: 12px;
+  color: #475569;
+  font-weight: 300;
+  margin-top: 4px;
+  display: block;
+}

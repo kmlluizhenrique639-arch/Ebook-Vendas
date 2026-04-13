@@ -1,0 +1,46 @@
+.chapters {
+  background: var(--surface-alt);
+}
+
+.chapters-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 14px;
+}
+
+.chap-card {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-sm);
+  padding: 16px 18px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  transition: border-color 0.2s, transform 0.2s;
+}
+
+.chap-card:hover {
+  border-color: var(--blue-light);
+  transform: translateY(-2px);
+}
+
+.chap-num {
+  width: 30px;
+  height: 30px;
+  background: var(--blue);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: var(--font-display);
+  font-size: 12px;
+  font-weight: 700;
+  color: #fff;
+  flex-shrink: 0;
+}
+
+.chap-card span {
+  font-size: 14px;
+  font-weight: 400;
+  color: #334155;
+}

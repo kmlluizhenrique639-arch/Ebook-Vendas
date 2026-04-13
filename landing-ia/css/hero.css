@@ -1,0 +1,145 @@
+.hero {
+  padding: 120px 5% 80px;
+  background: var(--surface);
+}
+
+.hero-inner {
+  max-width: 1100px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 60px;
+  align-items: center;
+}
+
+/* Badge */
+.hero-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  background: var(--blue-pale);
+  border: 1px solid var(--blue-border);
+  color: var(--blue);
+  font-size: 12px;
+  font-weight: 500;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  padding: 5px 12px;
+  border-radius: 100px;
+  margin-bottom: 20px;
+}
+
+/* Headline */
+.hero h1 {
+  font-family: var(--font-display);
+  font-size: clamp(32px, 4.5vw, 52px);
+  font-weight: 800;
+  line-height: 1.08;
+  color: var(--text-primary);
+  margin-bottom: 20px;
+}
+
+.hero h1 span {
+  color: var(--blue);
+}
+
+.hero-content > p {
+  font-size: 17px;
+  color: var(--text-secondary);
+  font-weight: 300;
+  margin-bottom: 36px;
+  max-width: 480px;
+  line-height: 1.7;
+}
+
+/* Stats row */
+.hero-stats {
+  display: flex;
+  gap: 0;
+  margin-bottom: 36px;
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  overflow: hidden;
+  width: fit-content;
+}
+
+.hero-stat {
+  padding: 14px 28px;
+  border-right: 1px solid var(--border);
+}
+
+.hero-stat:last-child {
+  border-right: none;
+}
+
+.hero-stat strong {
+  display: block;
+  font-family: var(--font-display);
+  font-size: 22px;
+  font-weight: 700;
+  color: var(--blue);
+}
+
+.hero-stat span {
+  font-size: 12px;
+  color: var(--text-muted);
+  font-weight: 300;
+}
+
+.hero-sub {
+  font-size: 13px;
+  color: var(--text-muted);
+  margin-top: 12px;
+}
+
+/* Image */
+.hero-img {
+  border-radius: var(--radius-xl);
+  overflow: hidden;
+}
+
+.hero-img img {
+  width: 100%;
+  height: 380px;
+  object-fit: cover;
+  border-radius: var(--radius-xl);
+  display: block;
+}
+
+.hero-img-placeholder {
+  width: 100%;
+  height: 380px;
+  background: linear-gradient(135deg, #0f172a 0%, #1e3a6e 50%, #1d4ed8 100%);
+  border-radius: var(--radius-xl);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.hero-img-placeholder::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(circle at 60% 40%, rgba(59, 130, 246, 0.3), transparent 60%);
+}
+
+.hero-ai-label {
+  font-family: var(--font-display);
+  font-size: 42px;
+  font-weight: 800;
+  color: #fff;
+  text-align: center;
+  z-index: 1;
+  line-height: 1;
+}
+
+.hero-ai-label small {
+  display: block;
+  font-size: 16px;
+  font-weight: 400;
+  color: #93c5fd;
+  letter-spacing: 0.12em;
+  margin-top: 4px;
+}

@@ -1,0 +1,88 @@
+/* ── Tablet ── */
+@media (max-width: 900px) {
+  .chapters-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .t-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .footer-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .benefits-inner {
+    gap: 48px;
+  }
+}
+
+/* ── Mobile ── */
+@media (max-width: 768px) {
+  /* Nav */
+  .nav-links {
+    display: none;
+  }
+
+  /* Hero */
+  .hero-inner {
+    grid-template-columns: 1fr;
+  }
+
+  .hero-img-placeholder {
+    height: 260px;
+  }
+
+  .hero-stats {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .hero-stat {
+    border-right: none;
+    border-bottom: 1px solid var(--border);
+    padding: 12px 20px;
+  }
+
+  .hero-stat:last-child {
+    border-bottom: none;
+  }
+
+  /* Sections */
+  .problems-grid,
+  .learn-grid,
+  .chapters-grid {
+    grid-template-columns: 1fr;
+  }
+
+  /* Benefits */
+  .benefits-inner {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+
+  /* Stats */
+  .stats-grid,
+  .t-stats-row {
+    grid-template-columns: 1fr;
+    gap: 32px;
+  }
+
+  /* Testimonials */
+  .t-grid {
+    grid-template-columns: 1fr;
+  }
+
+  /* Footer */
+  .footer-grid {
+    grid-template-columns: 1fr;
+    gap: 32px;
+  }
+
+  /* CTA pills */
+  .cta-pills {
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
+  }
+}

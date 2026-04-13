@@ -1,0 +1,50 @@
+.learn-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+}
+
+.learn-card {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 24px;
+  transition: border-color 0.2s, box-shadow 0.2s;
+}
+
+.learn-card:hover {
+  border-color: var(--blue-light);
+  box-shadow: 0 4px 24px rgba(37, 99, 235, 0.08);
+}
+
+.learn-icon {
+  width: 40px;
+  height: 40px;
+  background: var(--blue-pale);
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 14px;
+  color: var(--blue);
+}
+
+.learn-icon svg {
+  width: 20px;
+  height: 20px;
+}
+
+.learn-card h3 {
+  font-family: var(--font-display);
+  font-size: 15px;
+  font-weight: 700;
+  color: var(--text-primary);
+  margin-bottom: 6px;
+}
+
+.learn-card p {
+  font-size: 13px;
+  color: var(--text-secondary);
+  font-weight: 300;
+  line-height: 1.6;
+}
